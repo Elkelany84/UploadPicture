@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blogapp.withphotos"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->G:\Dart\Projects\blogapp\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->G:\Dart\Projects\blogapp\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+15-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+16-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+17    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79
+18-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:22-76
+19    <!--
+20 io.flutter.app.FlutterApplication is an android.app.Application that
+21         calls FlutterMain.startInitialization(this); in its onCreate method.
+22         In most cases you can leave this as-is, but you if you want to provide
+23         additional functionality it is fine to subclass or reimplement
+24         FlutterApplication and put your custom class here.
+25    -->
+26    <application
+26-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:8:5-29:19
+27        android:name="io.flutter.app.FlutterApplication"
+27-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:9:9-57
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b608c3d8537f54a7ed8ad86b3bfe3664\core-1.1.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:11:9-43
+31        android:label="blogapp" >
+31-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:10:9-32
+32        <activity
+32-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:12:9-23:20
+33            android:name="com.blogapp.withphotos.MainActivity"
+33-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:13:13-41
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:16:13-163
+35            android:hardwareAccelerated="true"
+35-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:17:13-47
+36            android:launchMode="singleTop"
+36-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:14:13-43
+37            android:theme="@style/LaunchTheme"
+37-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:15:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:18:13-55
+39            <intent-filter>
+39-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:19:13-22:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:20:17-68
+40-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:20:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:21:17-76
+42-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:21:27-74
+43            </intent-filter>
+44        </activity>
+45        <!--
+46             Don't delete the meta-data below.
+47             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+48        -->
+49        <meta-data
+49-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:26:9-28:33
+50            android:name="flutterEmbedding"
+50-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:27:13-44
+51            android:value="2" />
+51-->G:\Dart\Projects\blogapp\android\app\src\main\AndroidManifest.xml:28:13-30
+52
+53        <service
+53-->[:firebase_storage] G:\Dart\Projects\blogapp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+54            android:name="com.google.firebase.components.ComponentDiscoveryService"
+54-->[:firebase_storage] G:\Dart\Projects\blogapp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+55            android:directBootAware="true"
+55-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+56            android:exported="false" >
+56-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
+57            <meta-data
+57-->[:firebase_storage] G:\Dart\Projects\blogapp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+58                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+58-->[:firebase_storage] G:\Dart\Projects\blogapp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[:firebase_storage] G:\Dart\Projects\blogapp\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+60            <meta-data
+60-->[:cloud_firestore] G:\Dart\Projects\blogapp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+61-->[:cloud_firestore] G:\Dart\Projects\blogapp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[:cloud_firestore] G:\Dart\Projects\blogapp\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+63            <meta-data
+63-->[:firebase_core] G:\Dart\Projects\blogapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+64-->[:firebase_core] G:\Dart\Projects\blogapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[:firebase_core] G:\Dart\Projects\blogapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+67                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+67-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\b2b7dad1e96a82a8c9476120cd02f8eb\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\a1b1dfa5c4510737e1c0d2859d99b019\firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+70                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+70-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\a1b1dfa5c4510737e1c0d2859d99b019\firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\a1b1dfa5c4510737e1c0d2859d99b019\firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+72        </service>
+73
+74        <provider
+74-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+75            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+75-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+76            android:authorities="com.blogapp.withphotos.flutter.image_provider"
+76-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+77            android:exported="false"
+77-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+78            android:grantUriPermissions="true" >
+78-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+79            <meta-data
+79-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+80                android:name="android.support.FILE_PROVIDER_PATHS"
+80-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+81                android:resource="@xml/flutter_image_picker_file_paths" />
+81-->[:image_picker] G:\Dart\Projects\blogapp\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+82        </provider>
+83        <provider
+83-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+84            android:name="com.google.firebase.provider.FirebaseInitProvider"
+84-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+85            android:authorities="com.blogapp.withphotos.firebaseinitprovider"
+85-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+86            android:directBootAware="true"
+86-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+87            android:exported="false"
+87-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+88            android:initOrder="100" />
+88-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\938a41e00a3f593c1f5b7cdfb6506774\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\fe53dd02fea6f00fc0146f74a725f819\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\fe53dd02fea6f00fc0146f74a725f819\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\fe53dd02fea6f00fc0146f74a725f819\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\fe53dd02fea6f00fc0146f74a725f819\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\01c8e3804364645ba693d9d2486ebbe5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\01c8e3804364645ba693d9d2486ebbe5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ORIGINAL\.gradle\caches\transforms-2\files-2.1\01c8e3804364645ba693d9d2486ebbe5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+98    </application>
+99
+100</manifest>
